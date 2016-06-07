@@ -59,4 +59,16 @@ label start:
     show burns
     d "Y por ultimo, pero no menos importante, Sr. Burns"
 
+    hide burns
+    show policia3
+    d "Vamos a las preguntas:"
+    d "Homer estaba en el pueblo?"
+
+    menu:
+
+      "si":
+        jump si
+      "no":
+        jump no
+
     return
