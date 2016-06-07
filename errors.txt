@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 23: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
-    xalign 0.5 yalign 0.7
+File "game/script.rpy", line 46: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    xalign 0.5 yalign 0.5
     ^
 
 Ren'Py Version: Ren'Py 6.99.8.959

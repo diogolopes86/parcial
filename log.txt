@@ -1,4 +1,4 @@
-Mon May 23 16:23:16 2016
+Mon Jun  6 21:30:50 2016
 Linux-4.4.0-22-generic-x86_64-with-Ubuntu-16.04-xenial
 Ren'Py 6.99.8.959
  
@@ -6,29 +6,30 @@ Ren'Py 6.99.8.959
 Bootstrap to the start of init.init took 0.13s
 Early init took 0.01s
 Loader init took 0.01s
-Loading error handling took 0.03s
-Loading script took 0.07s
+Loading error handling took 0.02s
+Loading script took 0.17s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.15s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
+Backing up script files to '/home/diogo/.renpy/backups/Parcial':
 Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.23s
+Creating interface object took 0.24s
 Cleaning stores took 0.00s
 Init translation took 0.01s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.05s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.06s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.06s
+Save bytecode. took 0.03s
+Running _start took 0.00s
 Performance test:
 Interface start took 0.01s
 
@@ -266,18 +267,18 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.20229101181s
+Total time until interface ready: 1.46506500244s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.018164 seconds.
-- Frame drawn at 0.032440 seconds.
-- Frame drawn at 0.049137 seconds.
-- Frame drawn at 0.067047 seconds.
-- 0.067047 seconds to render 5 frames.
+- Frame drawn at 0.019675 seconds.
+- Frame drawn at 0.031438 seconds.
+- Frame drawn at 0.046134 seconds.
+- Frame drawn at 0.065186 seconds.
+- 0.065186 seconds to render 5 frames.
 Cleaning stores took 0.00s
-Init translation took 0.12s
+Init translation took 0.13s
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s

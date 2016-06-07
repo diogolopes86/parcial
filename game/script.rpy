@@ -10,67 +10,53 @@
 # - Declara los personajes usados en el juego como en el
 #   ejemplo.
 define h = Character('Homer', color="#c8ffc8")
-define d = Character('Detective', color="#88ff25")
+define d = Character('Detective Clansy', color="#88ff25")
 
-image bg ciudad = "ciudad.png"
+image bg springfield = "springfield.jpg"
 image bg cadeia = "cadeia4.jpg"
 image sala = "sala3.jpg"
-image homer = im.FactorScale("homer.png",0.8)
-image barney = "barney.png"
-image barney2 = "barney2.png"
-image barney3 = "barney3.png"
-image bart = "bart.png"
+image homer = im.FactorScale("homer.png", 1.15)
+image homer2 = "homer2.png"
+image bart = im.FactorScale("bart.png", 1.15)
 image bart2 = "bart2.png"
-image bob = "bob.png"
-image bob2 = "bob2.png"
 image burns = "burns.png"
-image chef = "chef_clancy.png"
+image burns2 = "burns2.png"
 image flanders = "flanders.png"
-image marge = "marge.png"
-image marge2 = "marge2.png"
-image detective hablando = "detective_hablando.png"
-image detective piensando = "detective_piensando.png"
-image detective aha = "detective_aha.png"
-image detective pruebas = "detective_pruebas.png"
+image flanders2 = "flanders2.png"
+image policia = "policia.png"
+image policia2 = "policia2.png"
+image policia3 = "policia3.png"
 
 # The game starts here.
 # - El juego comienza aquí.
 label start:
 
-    scene bg ciudad
-    show detective hablando:
-      xalign 0.8 yalign 0.7
+    scene bg springfield
+    show policia3:
+      xalign 0.5 yalign 0.5
     d "Encontraron una mujer muerta fuera del pueblo."
     d "Testigos dicen haber escuchado disparos y alguien corriendo." 
 
+    hide policia3
+    show policia2:
+      xalign 0.5 yalign 0.5
     d "Aqui tenemos los sospechosos."
 
-    hide detective hablando
+    hide policia2
     show homer
     d "Ese es Homer"
 
     hide homer
-    show barney2
-    d "Tenemos a Barney"
+    show bart
+    d "Tenemos a Bart"
 
-    hide barney2
-    show bart2
-    d "Ese es Bart"
-
-    hide bart2
-    show bob
-    d "Bob"
-
-    hide bob
-    show burns
-    d "El sr. Burns"
-
-    hide burns
-    show flanders
+    hide bart
+    show flanders:
+        xalign 0.5 yalign 0.2
     d "Sr. Flanders"
 
     hide flanders
-    show chef
-    d "Y por ultimo, pero no menos importante, Moe"
+    show burns
+    d "Y por ultimo, pero no menos importante, Sr. Burns"
 
     return
