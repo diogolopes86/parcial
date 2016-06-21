@@ -1,4 +1,4 @@
-Mon Jun  6 22:24:39 2016
+Mon Jun 20 20:38:34 2016
 Linux-4.4.0-22-generic-x86_64-with-Ubuntu-16.04-xenial
 Ren'Py 6.99.8.959
  
@@ -6,9 +6,9 @@ Ren'Py 6.99.8.959
 Bootstrap to the start of init.init took 0.13s
 Early init took 0.01s
 Loader init took 0.01s
-Loading error handling took 0.02s
+Loading error handling took 0.03s
 Loading script took 0.17s
-Loading persistent took 0.01s
+Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.16s
 Loading analysis data took 0.02s
@@ -19,15 +19,15 @@ Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.24s
+Creating interface object took 0.25s
 Cleaning stores took 0.00s
 Init translation took 0.01s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.07s
+Save screen analysis took 0.06s
 Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.06s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
@@ -267,17 +267,18 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.39432001114s
+Total time until interface ready: 1.46904397011s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.016978 seconds.
-- Frame drawn at 0.032061 seconds.
-- Frame drawn at 0.049175 seconds.
-- Frame drawn at 0.066926 seconds.
-- 0.066926 seconds to render 5 frames.
-Traceback (most recent call last):
-  File "/usr/share/games/renpy/renpy/error.py", line 232, in report_exception
-    os.makedirs(tbdir)
-  File "/usr/lib/python2.7/os.py", line 157, in makedirs
-    mkdir(name, mode)
-OSError: [Errno 17] File exists: '/home/diogo/.renpy/'
+- Frame drawn at 0.020163 seconds.
+- Frame drawn at 0.033436 seconds.
+- Frame drawn at 0.049073 seconds.
+- Frame drawn at 0.067838 seconds.
+- 0.067838 seconds to render 5 frames.
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

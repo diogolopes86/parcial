@@ -9,40 +9,41 @@
 # Declare characters used by this game.
 # - Declara los personajes usados en el juego como en el
 #   ejemplo.
+
+
 define h = Character('Homer', color="#c8ffc8")
-define d = Character('Detective Clansy', color="#88ff25")
+define b = Character('Bart', color="#c8cc00")
+define f = Character('Flanders', color="#c0ccff")
+define d = Character('Detective', color="#88ff25")
 
 image bg springfield = "springfield.jpg"
 image bg cadeia = "cadeia4.jpg"
-image sala = "sala3.jpg"
+image bg sala = "sala3.jpg"
 image homer = im.FactorScale("homer.png", 1.15)
 image homer2 = "homer2.png"
 image bart = im.FactorScale("bart.png", 1.15)
 image bart2 = "bart2.png"
-image burns = "burns.png"
-image burns2 = "burns2.png"
 image flanders = "flanders.png"
 image flanders2 = "flanders2.png"
 image policia = "policia.png"
 image policia2 = "policia2.png"
 image policia3 = "policia3.png"
+image detective hablando = im.FactorScale("detective_hablando.png", 0.6)
+image detective hablando pruebas = im.FactorScale("detective_pruebas.png", 0.5)
+image detective hablando aha = im.FactorScale("detective_aha.png", 0.5)
 
 # The game starts here.
 # - El juego comienza aquí.
 label start:
 
     scene bg springfield
-    show policia3:
+    show detective hablando:
       xalign 0.5 yalign 0.5
     d "Encontraron una mujer muerta fuera del pueblo."
-    d "Testigos dicen haber escuchado disparos y alguien corriendo." 
-
-    hide policia3
-    show policia2:
-      xalign 0.5 yalign 0.5
+    d "Un testigos dice haber escuchado disparos y alguien corriendo." 
     d "Aqui tenemos los sospechosos."
 
-    hide policia2
+    hide detective hablando
     show homer
     d "Ese es Homer"
 
@@ -56,19 +57,43 @@ label start:
     d "Sr. Flanders"
 
     hide flanders
-    show burns
-    d "Y por ultimo, pero no menos importante, Sr. Burns"
-
-    hide burns
-    show policia3
+    show policia3:
+        xalign 0.5 yalign 0.5
+    d "Vamos guardia Clansy, traeme el testigo"
     d "Vamos a las preguntas:"
-    d "Homer estaba en el pueblo?"
+    d "Quien usted vio afuera del pueblo?"
 
     menu:
 
-      "si":
-        jump si
-      "no":
-        jump no
+      "Homer":
+        jump homer
+      "Bart":
+        jump bart
+      "Flanders":
+        jump flanders
 
-    return
+    label homer:
+      scene bg sala
+      show homer2:
+        xalign 0.5 yalign 0.8
+
+      hide homer2
+      show detective hablando:
+        xalign 0.5 yalign 0.5
+      d "Viste Homer junto con la victima?"
+
+      menu:
+    
+        "Si":
+          jump si
+        "No":
+          jump no
+      label no:
+        d "Entonces usted no sabe nada. ¡Caso archivado!"
+        return
+      label si:
+        show detective pruebas:
+          xalign 0.5 yalign 0.5
+        d "Interesante, eso quiere decir mucha cosa."
+
+return
