@@ -169,7 +169,7 @@ label start:
       show milhouse:
         xalign 0.5 yalign 0.5
       n "Los segui y vi que entraron en un restaurante cerca de la carretera"
-      n "Despues de un tiempo, bart saliendo solo de adentro"
+      n "Despues de un tiempo, Bart regreso al pueblo solo en el carro de la victima"
 
       hide milhouse
       show detective pensando:
@@ -200,7 +200,7 @@ label start:
       hide detective aha
       show policia:
         xalign 0.5 yalign 0.5
-      c "NO TE MUEVAS MALIANTE"
+      c "QUEDAS ARRESTADO"
 
       hide policia
       show bart2:
@@ -224,7 +224,7 @@ label start:
       show moe:
         xalign 0.5 yalign 0.5
       m "Los segui y vi que entraron en un restaurante cerca de la carretera"
-      m "Despues de un tiempo, Flanders saliendo solo de adentro"
+      m "Despues de un tiempo, no se supo mas de la victima y flandes regreso solo al pueblo"
 
       hide moe
       show detective pensando:
@@ -255,7 +255,7 @@ label start:
       hide detective aha
       show policia:
         xalign 0.5 yalign 0.5
-      c "NO TE MUEVAS MALIANTE"
+      c "NO TE MUEVAS TODO LO QUE DIGAS PUEDE SER UTILIZADO EN TU CONTRA"
 
       hide policia
       show flanders2:
